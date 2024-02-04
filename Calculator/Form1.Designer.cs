@@ -169,6 +169,7 @@
             // 
             // btnMultiplication
             // 
+            btnMultiplication.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnMultiplication.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMultiplication.Location = new Point(265, 238);
             btnMultiplication.Name = "btnMultiplication";
@@ -180,6 +181,7 @@
             // 
             // btnMinus
             // 
+            btnMinus.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnMinus.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMinus.Location = new Point(265, 162);
             btnMinus.Name = "btnMinus";
@@ -191,6 +193,7 @@
             // 
             // btnPlus
             // 
+            btnPlus.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnPlus.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPlus.Location = new Point(265, 85);
             btnPlus.Name = "btnPlus";
@@ -202,6 +205,7 @@
             // 
             // btnDivision
             // 
+            btnDivision.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnDivision.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDivision.Location = new Point(265, 318);
             btnDivision.Name = "btnDivision";
@@ -224,6 +228,7 @@
             // 
             // btnClear
             // 
+            btnClear.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnClear.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClear.Location = new Point(13, 382);
             btnClear.Name = "btnClear";
