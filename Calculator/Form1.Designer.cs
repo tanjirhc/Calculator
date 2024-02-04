@@ -44,12 +44,13 @@
             btnPlus = new Button();
             btnDivision = new Button();
             btnEqual = new Button();
-            btnDot = new Button();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // txtTotal
             // 
             txtTotal.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTotal.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTotal.Location = new Point(13, 12);
             txtTotal.Multiline = true;
             txtTotal.Name = "txtTotal";
@@ -65,6 +66,7 @@
             btn1.TabIndex = 1;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
+            btn1.Click += btn1_Click;
             // 
             // btn2
             // 
@@ -86,6 +88,7 @@
             btn3.TabIndex = 3;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
+            btn3.Click += btn3_Click;
             // 
             // btn6
             // 
@@ -96,6 +99,7 @@
             btn6.TabIndex = 6;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
+            btn6.Click += btn6_Click;
             // 
             // btn5
             // 
@@ -106,6 +110,7 @@
             btn5.TabIndex = 5;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
+            btn5.Click += btn5_Click;
             // 
             // btn4
             // 
@@ -116,6 +121,7 @@
             btn4.TabIndex = 4;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
+            btn4.Click += btn4_Click;
             // 
             // btn9
             // 
@@ -126,6 +132,7 @@
             btn9.TabIndex = 9;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
+            btn9.Click += btn9_Click;
             // 
             // btn8
             // 
@@ -136,6 +143,7 @@
             btn8.TabIndex = 8;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
+            btn8.Click += btn8_Click;
             // 
             // btn7
             // 
@@ -146,6 +154,7 @@
             btn7.TabIndex = 7;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
+            btn7.Click += btn7_Click;
             // 
             // btn10
             // 
@@ -156,6 +165,7 @@
             btn10.TabIndex = 10;
             btn10.Text = "0";
             btn10.UseVisualStyleBackColor = true;
+            btn10.Click += btn10_Click;
             // 
             // btnMultiplication
             // 
@@ -166,6 +176,7 @@
             btnMultiplication.TabIndex = 13;
             btnMultiplication.Text = "*";
             btnMultiplication.UseVisualStyleBackColor = true;
+            btnMultiplication.Click += btnMultiplication_Click;
             // 
             // btnMinus
             // 
@@ -176,6 +187,7 @@
             btnMinus.TabIndex = 12;
             btnMinus.Text = "-";
             btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.Click += btnMinus_Click;
             // 
             // btnPlus
             // 
@@ -186,6 +198,7 @@
             btnPlus.TabIndex = 11;
             btnPlus.Text = "+";
             btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.Click += btnPlus_Click;
             // 
             // btnDivision
             // 
@@ -196,33 +209,36 @@
             btnDivision.TabIndex = 14;
             btnDivision.Text = "/";
             btnDivision.UseVisualStyleBackColor = true;
+            btnDivision.Click += btnDivision_Click;
             // 
             // btnEqual
             // 
             btnEqual.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEqual.Location = new Point(181, 318);
+            btnEqual.Location = new Point(96, 318);
             btnEqual.Name = "btnEqual";
-            btnEqual.Size = new Size(68, 52);
+            btnEqual.Size = new Size(153, 52);
             btnEqual.TabIndex = 15;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = true;
+            btnEqual.Click += btnEqual_Click;
             // 
-            // btnDot
+            // btnClear
             // 
-            btnDot.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDot.Location = new Point(96, 318);
-            btnDot.Name = "btnDot";
-            btnDot.Size = new Size(68, 52);
-            btnDot.TabIndex = 16;
-            btnDot.Text = ".";
-            btnDot.UseVisualStyleBackColor = true;
+            btnClear.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClear.Location = new Point(13, 382);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(320, 52);
+            btnClear.TabIndex = 17;
+            btnClear.Text = "CLEAR";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(347, 446);
-            Controls.Add(btnDot);
+            Controls.Add(btnClear);
             Controls.Add(btnEqual);
             Controls.Add(btnDivision);
             Controls.Add(btnMultiplication);
@@ -263,6 +279,6 @@
         private Button btnPlus;
         private Button btnDivision;
         private Button btnEqual;
-        private Button btnDot;
+        private Button btnClear;
     }
 }
